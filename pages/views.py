@@ -23,6 +23,8 @@ def callback(request):
                 'redirect_uri':redirect_uri,
                 'code':code
     }
+    #if value!='callback':
+    	#return "Mis match of callback url"
     req_token = requests.post(access_token_url, params=params)
     if req_token.status_code!=200:
         return HttpResponseServerError("Invalid Request:Unable to fetch the Salesforce Authorization information.")
@@ -61,6 +63,7 @@ def callback(request):
             'Access Token: ':access_token,
             'Refresh Token: ':refresh_token   
     }
+    
     update_data=SF_Details.objects.filter(Salesforce_Org_ID=Salesforce_org_id)
     if update_data:
     	 update_data.update(Salesforce_Edition=Salesforce_edition)
