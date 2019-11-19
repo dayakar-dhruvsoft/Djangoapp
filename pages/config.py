@@ -1,5 +1,0 @@
-consumer_key = '3MVG9G9pzCUSkzZugNGDltudYBlRJj6UlMPoUUfhXHenbsQtVFg8va3EJPfvrOROxPBP30TFp_jhnmeQKPn7R'
-consumer_secret = 'FC424D0B9657A8FAAB3E56A92C46AC99CAC11DD9133BEA918C6610B131219F8F'
-access_token_url = 'https://login.salesforce.com/services/oauth2/token'
-redirect_uri = 'http://localhost:8000/callback'
-authorize_url = 'https://login.salesforce.com/services/oauth2/authorize'
